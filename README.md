@@ -14,3 +14,4 @@ Este repositorio contiene un clon simple de la página de inicio de Google, con:
    cd google-clone
 2. Abre 'index.html' en tu navegador.
 3. Escribe algo y pulsa Enter haz click en un botón: verás la búsqueda en Google real.
+4. O bien, despliega desde GitHub Pages.
