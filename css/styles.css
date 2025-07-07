@@ -1,0 +1,91 @@
+/* Reseteo básico */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Cuerpo centrado verticalmente */
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 15%;
+  font-family: Arial, sans-serif;
+}
+
+/* Logo */
+.logo img {
+  width: 272px;
+  height: 92px;
+  margin-bottom: 20px;
+}
+
+/* Caja de búsqueda */
+.search-box {
+  position: relative;
+  width: 582px;
+  border: 1px solid #dfe1e5;
+  border-radius: 24px;
+  display: flex;
+  align-items: center;
+  padding: 0 14px;
+  transition: box-shadow .2s ease;
+}
+
+/* Sombra al hacer hover/focus */
+.search-box:hover,
+.search-box:focus-within {
+  box-shadow: 0 1px 6px rgba(32,33,36,0.28);
+}
+
+/* Iconos dentro */
+.search-icon,
+.mic-icon {
+  color: #9aa0a6;
+  font-size: 20px;
+  cursor: pointer;
+}
+.search-icon {
+  margin-right: 10px;
+}
+.mic-icon {
+  margin-left: 10px;
+}
+
+/* Input sin borde nativo */
+.search-box input {
+  flex: 1;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  padding: 14px 0;
+}
+
+/* Botones */
+.buttons {
+  margin-top: 20px;
+  /* mismo ancho que .search-box */
+  width: 582px;
+  margin: 20px auto 0;      /* auto en los lados centra el bloque */
+  display: flex;            /* activa flexbox */
+  justify-content: center;  /* centra hijos horizontalmente */
+}
+
+.buttons button {
+  background-color: #f8f9fa;
+  border: 1px solid #f8f9fa;
+  border-radius: 4px;
+  padding: 10px 16px;
+  margin: 0 4px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color .2s ease, box-shadow .2s ease;
+}
+.buttons button:hover {
+  background-color: #f1f3f4;
+  box-shadow: 0 1px 2px rgba(60,64,67,0.3);
+}
